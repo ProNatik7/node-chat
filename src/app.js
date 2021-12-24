@@ -13,7 +13,7 @@ const io = require('socket.io')(server);
 app.set('view engine', 'pug');
 app.set('views', './src/views');
 
-const port = 1337;
+const port = process.end.port || 1337;
 
 require("./chat-server")(io);
 
