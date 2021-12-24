@@ -1,0 +1,21 @@
+block variables
+
+DOCTYPE(html)
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        title #{pageTitle}-Node chat
+        link(rel="stylesheet" href="/css/index.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com%22")
+        link(rel="preconnect", href="https://fonts.gstatic.com%22", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap%22", rel="stylesheet")
+
+        block scripts
+    body 
+        nav 
+            .container
+                    a(href="/") accueil 
+                    a(href="/chat") chat
+        main.container 
+            block content
+    
